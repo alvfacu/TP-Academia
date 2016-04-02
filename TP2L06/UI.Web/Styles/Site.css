@@ -1,0 +1,98 @@
+﻿body
+{
+    text-align:center;
+    background-color:#FFFBD6;
+}
+
+.cabecera
+{
+    background-color:#CC3300;
+    text-align:center;    
+}
+
+.link
+{
+    font-size:medium;
+    background-color:White;
+}
+
+.menu
+{
+    width:1000px;
+    margin:4px auto;
+    height:2px;
+    background-color:#FFFBD6;
+}
+
+.content
+{
+    background-color:White;
+    font:Verdana;
+}
+
+.login
+{
+    width:500px;
+    margin:50px auto;
+    background-color:#FFFBD6;
+    border:solid maroon;        
+}
+
+.paginas
+{
+    font:Verdana;
+    color:Maroon;
+    height:600px auto;
+    background-color:#FFFBD6;
+}
+
+.error
+{
+    margin:auto;
+    color:Red;
+    font-weight:bold;       
+}
+
+.listaerrores
+{
+    margin: center;
+}
+
+.formulario
+{
+    border-style: solid;
+    border-color: Navy;
+    margin-left:100px;
+    margin-right:100px;
+    background-color:White;    
+}
+
+.menu
+{     
+     Background-color:#FFFBD6;
+     Font:"Verdana"; 
+     Font-Size:medium;
+}
+
+.pie
+{
+    Font:"Verdana";
+    Font-Size:medium;  
+}
+
+.login
+{
+    border-color:Black;
+    border-style: solid;
+    margin:auto;
+}
+
+.tabla
+{
+    margin:auto;
+}
+
+.titulo
+{
+    margin:auto;
+}

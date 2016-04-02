@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UI.Web.SiteMaster" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Sistema de Gestión Académica (SGA)</title>
+        <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <form id="bodyForm" runat="server">
+        <div class=cabecera>
+        <asp:LinkButton ID="linkHome" runat=server onclick="linkHome_Click" CausesValidation=false 
+                ToolTip="Bienvenido a la Academia">
+            <asp:Image runat=server ID="imagen" ImageUrl="~/Images/TunedIn_BooksfromtheBanner_large.jpg" /> 
+        </asp:LinkButton>        
+        <div class=link>
+        <asp:LinkButton ID="ingresar" runat=server Text="Ingresar" onclick="ingresar_Click" CausesValidation=false></asp:LinkButton>
+        <asp:Panel ID="panelUsuario" runat=server Visible=false>
+            Bievenido <asp:Label ID="nombreUsr" runat=server></asp:Label> !
+            <asp:LinkButton ID="salir" runat=server Text="Salir" CausesValidation=false onclick="salir_Click"></asp:LinkButton>
+        </asp:Panel>
+        </div>        
+        </div>
+        <div class=menu>
+            <asp:Menu runat="server" ID="menu" CssClass=menu Orientation="Horizontal" DynamicHorizontalOffset="2" 
+            StaticSubMenuIndent="10px" ForeColor="#990000">
+                <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#FFFBD6" />
+                <DynamicSelectedStyle BackColor="#FFCC66" />
+                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#FFCC66" />
+                <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" ToolTip="Inicio"/>                        
+                </Items>
+            </asp:Menu>
+        </div>
+        <div class=content>
+            <asp:ContentPlaceHolder ID="bodyContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <br />
+            <br />
+            <asp:Label ID="autoresLabel" runat=server ForeColor="#990000" CssClass=pie
+                Text="Developed by Alvarez Facundo & Gentiletti Matias. Copyright  © 2014 – All Rights Reserved."></asp:Label>
+        </div>
+        </form>
+    </body>
+</html>
