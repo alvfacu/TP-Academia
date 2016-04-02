@@ -1,2 +1,5 @@
-# TP-Academia
-TP2 NET: Academia
+# TP2 Academia
+Lenguaje: C#
+IDE: VS 2010 - 2015
+BD: SQL Server 2015
+Integrantes: Alvarez, Facundo y Gentiletti, Matías
